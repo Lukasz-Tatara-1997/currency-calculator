@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="style.css/style.css" rel="stylesheet" />
+    <link href="style.css/container.css" rel="stylesheet" />
+    <link href="style.css/form.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form__element" type="radio">
+        <h1 class="form__header">Kalkulator Walut</h1>
+        <label value="kwota-do-wymiany"></label>
+        <p class="form__paragraph">
+          <span class="form--emphasise">Kwota w PLN:</span>
+          <input
+            class="form__style form__input"
+            name="amount"
+            type="number"
+            placeholder="Wartość w zlotówkach"
+            required
+            step="0.01"
+            min="0.01"
+          />
+        </p>
+        <label value="waluta-do-wymiany"></label>
+        <p class="form__paragraph">
+          <span class="form--emphasise">Wymiań na: </span>
+          <select class="form__style form__currency">
+            <option value="Euro">Euro</option>
+            <option value="Isk">Korona Islandzka</option>
+            <option value="Usd">Dolar Amerykański</option>
+            <option value="Gpd">Funt Brytyjski</option>
+          </select>
+        </p>
+        <p class="paragraph--button"><button class="form--button">Wymień</button></p>
+        <div class="form--result"></div>
+      </form>
+    </div>
+  </body>
+</html>

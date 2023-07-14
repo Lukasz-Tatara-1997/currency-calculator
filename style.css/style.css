@@ -1,0 +1,12 @@
+html{
+    display: inline-block;
+}
+
+*,::before,::after{
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/f-41943-jak-wyglada-wymiana-pieniedzy-w-kantorze.jpg);
+
+}

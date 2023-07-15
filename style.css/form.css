@@ -6,6 +6,12 @@
         border: 2px solid black;
 }
 
+.form__element{
+        height: calc(100% - 200px);
+        min-width: 300px;
+        margin: 20px 0;
+}
+
 .form__header {
         text-align: center;
         padding: 20px;
@@ -66,14 +72,16 @@
         text-align: center;
 }
 
-.paragraph--button{
-        text-align: center;
-}
-
 @media(max-width:650px){
         .form--result{
                 padding: 30px;
+                background-color: white;
+
         }
+}
+
+.paragraph--button{
+        text-align: center;
 }
 
 .result--js {
